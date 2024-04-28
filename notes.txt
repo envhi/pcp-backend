@@ -1,0 +1,20 @@
+user table;
+PK id
+nome
+email
+password
+tipo_documento
+documento
+FK wallet_id
+
+
+carteira table (belongs to user)
+PK id
+saldo
+
+transferencia table (associacao)
+id
+origem_carteira_id
+destino_carteira_id
+valor
+data

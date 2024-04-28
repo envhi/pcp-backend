@@ -1,0 +1,36 @@
+{
+  "name": "express-ts-base-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "npx tsc",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.6",
+    "axios": "^1.6.8",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "reflect-metadata": "^0.2.1",
+    "ts-postgres": "^2.0.1",
+    "twilio": "^5.0.3",
+    "typeorm": "^0.3.20",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.24",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  }
+}
